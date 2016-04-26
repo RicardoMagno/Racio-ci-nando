@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1prsq5pz4ftoj</unique-id>
+    <saved-with-version>22100</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="ScirraArcadeV4" version="1">Scirra Arcade</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Jogadr" sid="9636799127352162">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8460003545090425">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="834308875115362">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="4244896430409874">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="7906132877160188">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="4837212640669052">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5750831665117182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\Sony\Pictures\player.png">
+                        <collision-poly>
+                            <point x="0.240741" y="0.252427" />
+                            <point x="0.5" y="0.0776699" />
+                            <point x="0.685185" y="0.330097" />
+                            <point x="0.944444" y="0.495146" />
+                            <point x="0.703704" y="0.68932" />
+                            <point x="0.5" y="0.961165" />
+                            <point x="0.194444" y="0.796117" />
+                            <point x="0.0462963" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="8170896576913163">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Parede1" sid="3169874999673581">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3956271313283511">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6810456377407787" speed="5">
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.501217" original-source="C:\Users\Sony\Pictures\paredes.png">
+                        <collision-poly>
+                            <point x="0.005" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.996666" y="0.645129" />
+                            <point x="0.862386" y="0.64446" />
+                            <point x="0.861911" y="0.668456" />
+                            <point x="0.839341" y="0.667376" />
+                            <point x="0.839489" y="0.522377" />
+                            <point x="0.509182" y="0.52402" />
+                            <point x="0.509695" y="0.509329" />
+                            <point x="0.854618" y="0.510197" />
+                            <point x="0.85408" y="0.629547" />
+                            <point x="0.975478" y="0.630675" />
+                            <point x="0.975675" y="0.397207" />
+                            <point x="0.575775" y="0.396806" />
+                            <point x="0.575358" y="0.360044" />
+                            <point x="0.585607" y="0.360082" />
+                            <point x="0.585438" y="0.373541" />
+                            <point x="0.975767" y="0.373694" />
+                            <point x="0.97882" y="0.0203894" />
+                            <point x="0.587348" y="0.0195279" />
+                            <point x="0.587611" y="0.280502" />
+                            <point x="0.575339" y="0.28013" />
+                            <point x="0.576401" y="0.0157676" />
+                            <point x="0.387384" y="0.0160781" />
+                            <point x="0.387962" y="0.402257" />
+                            <point x="0.375607" y="0.402618" />
+                            <point x="0.376208" y="0.0165374" />
+                            <point x="0.0186666" y="0.0172598" />
+                            <point x="0.019" y="0.399368" />
+                            <point x="0.00233333" y="0.399635" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch" sid="6645301725453821">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Avatar" sid="4615718275544472">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5550031584170101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Desktop\vamojunto0\public\images\user.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="833140207512293">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Pai" sid="7114526411423439">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="3967573916353319">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="9011552042122669">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180345227286676" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\Sony\Pictures\8813.png">
+                        <collision-poly>
+                            <point x="0.176471" y="0.176471" />
+                            <point x="0.494118" y="0.0470588" />
+                            <point x="0.823529" y="0.176471" />
+                            <point x="0.952941" y="0.494118" />
+                            <point x="0.823529" y="0.823529" />
+                            <point x="0.494118" y="0.952941" />
+                            <point x="0.176471" y="0.823529" />
+                            <point x="0.0470588" y="0.494118" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="8872537119071186">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4887318349669558" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\130273087430153472_666x600-planta-casa-b-14021-m-inferior.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Parede2" sid="9333699198788963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3052284036274482">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488377452727665" speed="5">
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.501217" original-source="C:\Users\Sony\Pictures\paredes.png">
+                        <collision-poly>
+                            <point x="0.000666667" y="0.498632" />
+                            <point x="0.0186667" y="0.498365" />
+                            <point x="0.0188332" y="0.530262" />
+                            <point x="0.375833" y="0.530261" />
+                            <point x="0.375833" y="0.501065" />
+                            <point x="0.3895" y="0.501065" />
+                            <point x="0.389667" y="0.547445" />
+                            <point x="0.0215001" y="0.547901" />
+                            <point x="0.0190001" y="0.982511" />
+                            <point x="0.84" y="0.982511" />
+                            <point x="0.839667" y="0.768856" />
+                            <point x="0.861333" y="0.769008" />
+                            <point x="0.861667" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pause" sid="3910874150065167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2454529335903991" speed="5">
+                    <frame duration="1" hotspotX="0.50193" hotspotY="0.501529" original-source="C:\Users\Sony\Pictures\menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pausar" sid="1818533292479877">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Moedas" sid="348522474065203">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="538437621701516">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6383196422060614" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="173494644015347">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2659153958626459" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="E:\Imagens\canoCurvo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="3747952472123066">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4134378685011479" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Imagens\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="8736099291238628">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8136380057784717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Imagens\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="6093458167849381">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2922130270500759" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Imagens\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="1513215126777025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3850579756849064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Imagens\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P1" sid="1971428328305055">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8906457747292752" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoCurvo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P2" sid="5271387103247485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1118456431123501" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P3" sid="2203316109117059">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5336987542604545" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoCurvo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="7588417038185993">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1207806139223596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P4" sid="4186501490867451">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2596514695915804" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.51" original-source="C:\Users\Sony\Pictures\canoCurvo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P5" sid="9834793148985593">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6765589610759533" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.51" original-source="C:\Users\Sony\Pictures\canoCurvo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P6" sid="5976173188861459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6052345801606512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P7" sid="9113454645157144">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6126012970917064" speed="5">
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P8" sid="99552566985361">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8103626389513884" speed="5">
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\canoReto.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Empty" sid="271772623769852">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3261016443197112" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.485714" />
+                            <point x="0.528571" y="0" />
+                            <point x="1" y="0.528571" />
+                            <point x="0.457143" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Hidden" pingpong="0" repeatcount="1" repeatto="0" sid="998467886033918" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.52381" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Timer" sid="6827311415153938">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4688609973927722">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Submit" sid="3639837055149889">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Restart" sid="8277844070022274">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="7774973328532409">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ScirraArcade" sid="6482148865742884">
+            <plugin id="ScirraArcadeV4" />
+        </object-type>
+        <object-type name="ScirraLogo" sid="5500501768682647">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9627087316845913" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LaMar\Desktop\C2 Stuff\Ants\Files\icon-128.png">
+                        <collision-poly>
+                            <point x="0.210938" y="0.210938" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.21875" y="0.78125" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Template" pingpong="0" repeatcount="1" repeatto="0" sid="5704086773742394" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="8551857424932952">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6374251301300113" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\bola2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mãe" sid="7745504640108361">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="8666646215884565">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="2324422441047587">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9224698859837004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sony\Pictures\bola2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="112194605923332">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="PiaCozinha" sid="549915161281631">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9463347671306498" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Lavanderia" sid="1910579823559525">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8423718949954599" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.504854" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.504854" original-source="E:\agua.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PiaBanheiro" sid="246634556098767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7625794111084416" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\agua.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chuveiro" sid="2294207684722978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5017200669632552" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.592593">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Carropreto" sid="4565156686442538">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5600136955176097" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Carrovermelho" sid="1007576659912116">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3722142319830402" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Carroprata" sid="1866970899635447">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5460459188063837" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Agua" sid="5762830801267129">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2685166242783762" speed="5">
+                    <frame duration="1" hotspotX="1.64872" hotspotY="1.06667" original-source="C:\Users\Sony\Pictures\pulverizador-e-jato-de-água-25484913.jpg">
+                        <collision-poly>
+                            <point x="0.0025641" y="0.00215054" />
+                            <point x="1" y="0.00215054" />
+                            <point x="1" y="1" />
+                            <point x="0.0025641" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="8641936753259214" speed="5">
+                    <frame duration="1" hotspotX="1.03836" hotspotY="0.507527" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation3" pingpong="0" repeatcount="1" repeatto="0" sid="8531194148804994" speed="5">
+                    <frame duration="1" hotspotX="1.04408" hotspotY="0.530337" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sofa" sid="1250943516359403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4103928950850571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RAgua" sid="4518447718256838">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+        <layout>Slider.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Audio" uid="14">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="ScirraArcade" uid="15" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Door Locked.ogg" />
+        <file name="Mission Impossible Theme Song (8-bit).ogg" />
+        <file name="Hooray.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
