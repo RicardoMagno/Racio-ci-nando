@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <variable constant="0" name="PosHolderX" sid="5805536982366134" static="0" type="number">0</variable>
+        <variable constant="0" name="PosHolderY" sid="24136282292749" static="0" type="number">0</variable>
+        <variable constant="0" name="Completed" sid="6516567937920269" static="0" type="number">0</variable>
+        <variable constant="0" name="Clock" sid="9552087080555282" static="0" type="number">0</variable>
+        <comment>Got to have some music to inspire!</comment>
+        <event-block sid="6831450588955408">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9605484854262809" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="1793505544246198" type="Audio" />
+                <action id="0" name="Play" sid="508559784558271" type="Audio">
+                    <param id="0" name="Audio file">Hooray</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>M Key lets you toggle off music</comment>
+        <event-block sid="3980890370867691">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5316645017590764" type="Keyboard">
+                    <param id="0" name="Key">77 (M)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="2643219466048216" type="Audio">
+                    <param id="0" name="Mode">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Check on clicked puzzle piece to see if it is overlapping the empty slot. If it is then switch puzzle piece with empty slot.</comment>
+        <event-block sid="1986614442213447">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6635228530721039" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P1</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="1126232119671397" type="P1">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4907654228512186" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P1.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="9831756241484288" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P1.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="9061251273529908" type="P1">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="7988069533622631" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6887309078828451" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="4295745608041711" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1747069219773702">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9503124346180633" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P2</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="5805854665951388" type="P2">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4671872249354104" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P2.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="844726595412664" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P2.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="5855009177276515" type="P2">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="2174672150314956" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6270083827306623" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="5154769225576697" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9856175150623208">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3495667288470622" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P3</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="5834055001954901" type="P3">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1023695859973657" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P3.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="6959083401475476" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P3.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="2658032364870157" type="P3">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="449482807488377" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5435609446683324" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="2419049449615485" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4299698557914705">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3818641397397563" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P4</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="9703735871472815" type="P4">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6989786644373592" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P4.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="3714548871099059" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P4.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="8542065941610972" type="P4">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="270500232750505" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1033279608458948" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="6812042850624044" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5210194837801312">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9085175201729244" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P5</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="9147521089214345" type="P5">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3807062196176617" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P5.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="8654782998871759" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P5.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="6403474170706263" type="P5">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="9385909938215126" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1304851384988827" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="5888457907921216" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9753384496059343">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4686909373484181" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P6</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="5905205909022896" type="P6">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="932763709155287" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P6.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="5872825357370811" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P6.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="1172105810697651" type="P6">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="2481334035369694" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5200224025293495" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="7091111009071085" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3297786836084954">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1053918477852732" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P7</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="355560264771775" type="P7">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6328255742172327" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P7.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="7348252199515648" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P7.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="8897409968747698" type="P7">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="1618300727257291" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6185933586757199" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="3499366635771122" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4245757787538241">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7838062458326635" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">P8</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="4616511268548611" type="P8">
+                    <param id="0" name="Object">Empty</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4016371143689372" type="System">
+                    <param id="0" name="Variable">PosHolderX</param>
+                    <param id="1" name="Value">P8.ImagePointX(0)</param>
+                </action>
+                <action id="-9" name="Set value" sid="8254288808206404" type="System">
+                    <param id="0" name="Variable">PosHolderY</param>
+                    <param id="1" name="Value">P8.ImagePointY(0)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="7614054705341223" type="P8">
+                    <param id="0" name="Object">Empty</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="1989667457916663" type="Empty">
+                    <param id="0" name="X">PosHolderX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1618027114201712" type="Empty">
+                    <param id="0" name="Y">PosHolderY</param>
+                </action>
+                <action id="0" name="Play" sid="1858747172636353" type="Audio">
+                    <param id="0" name="Audio file">Mission Impossible Theme Song (8-bit)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If all the pieces are back where they should be play &quot;Hooray&quot;. Show hidden puzzle piece. Submit score &quot;Clock&quot; and set Game &quot;Completed&quot;.</comment>
+        <event-block sid="8283099022579675">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="6187561527072896" type="P8">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">174</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="9299022743966513" type="P8">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">174</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="8152656813988956" type="P6">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">239</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="3716015032713886" type="P6">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">174</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="4304233591383172" type="P1">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">304</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="6540376655029055" type="P1">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">174</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="35574886338283" type="P3">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">174</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="2614695513673197" type="P3">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">239</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="8324237992000659" type="P2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">239</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="4602555956306304" type="P2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">239</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="2295685706560561" type="P7">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">304</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="1553128865274977" type="P7">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">239</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="5146561112438061" type="P5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">174</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="7745443576480048" type="P5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">304</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="2773958010948416" type="P4">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">239</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="2055300231128295" type="P4">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Y co-ordinate">304</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8772271533540577" type="System">
+                    <param id="0" name="Variable">Completed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6038344778503123" type="Audio">
+                    <param id="0" name="Audio file">Door Locked</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="4422454492239195" type="Empty">
+                    <param id="0" name="Animation">&quot;Hidden&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2281088712698889" type="System">
+                    <param id="0" name="Variable">Completed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Submit score" sid="5844780578639675" type="ScirraArcade">
+                    <param id="0" name="Leaderboard ID">&quot;ScirraPuzzle&quot;</param>
+                    <param id="1" name="Score">Clock</param>
+                </action>
+                <action id="-15" name="Set visible" sid="101737455778322" type="Submit">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5020875541310631" type="Restart">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Scramble the puzzle pieces by switching the X and Y coordinates with other pieces.</comment>
+        <event-block sid="5722395766842329">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6485204586818413" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="9194273993180864" type="P1">
+                    <param id="0" name="Object">P8</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="8822026679868915" type="P8">
+                    <param id="0" name="X">304</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5829291598036016" type="P8">
+                    <param id="0" name="Y">174</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="2039302129730678" type="P2">
+                    <param id="0" name="Object">P7</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="362408845572235" type="P7">
+                    <param id="0" name="X">239</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3712491361818877" type="P7">
+                    <param id="0" name="Y">239</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="977441148533033" type="P3">
+                    <param id="0" name="Object">P6</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="5892163887382983" type="P6">
+                    <param id="0" name="X">174</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5738091877805617" type="P6">
+                    <param id="0" name="Y">239</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="8989649649675903" type="P4">
+                    <param id="0" name="Object">P5</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="8589070534731815" type="P5">
+                    <param id="0" name="X">239</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9614223527827599" type="P5">
+                    <param id="0" name="Y">304</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Press &quot;H&quot; to see the puzzle hint. Only shown for 3 seconds.</comment>
+        <event-block sid="9628213026215744">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2885856566896698" type="Keyboard">
+                    <param id="0" name="Key">72 (H)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="1813584507958435" type="ScirraLogo">
+                    <param id="0" name="X">239</param>
+                    <param id="1" name="Y">239</param>
+                </action>
+                <action id="-16" name="Wait" sid="6598402638547496" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-3" name="Set position" sid="6067996633766387" type="ScirraLogo">
+                    <param id="0" name="X">-238</param>
+                    <param id="1" name="Y">183</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Keep track of time using global variable &quot;Clock&quot;</comment>
+        <event-block sid="2845703941592422">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8038858615397542" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="115749926545111" type="System">
+                    <param id="0" name="Variable">Completed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4751538730353002" type="System">
+                    <param id="0" name="Variable">Clock</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3577990233007216" type="Timer">
+                    <param id="0" name="Text">Clock</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Reset the screen anytime by pressing Return</comment>
+        <event-block sid="8002315160911284">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4514689540209092" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="6428164562392939" type="System" />
+                <action id="-26" name="Restart layout" sid="8732539366973408" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Variable1" sid="6154566252788247" static="0" type="number">0</variable>
+        <variable constant="0" name="ReservaAgua" sid="5699441103419289" static="0" type="number">1000</variable>
+        <variable constant="0" name="Moedas" sid="4304265777097363" static="0" type="number">100</variable>
+        <event-block sid="7900304689209071">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="889053958028977" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="5236281623917371" type="Jogadr">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="2982105299197624" type="Moedas">
+                    <param id="0" name="Text">&quot;Moedas: &quot; &amp; Moedas</param>
+                </action>
+                <action id="0" name="Set text" sid="8001766299518543" type="RAgua">
+                    <param id="0" name="Text">&quot;Agua: &quot; &amp; ReservaAgua</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6430466769938717">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="362589568189099" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Pausar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="4093302764439482" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7163413721581319" type="pause">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6762399780662318">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2509156795206097" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">pause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="4532960523880793" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="4161190646498426" type="pause">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1303111378391301" title="Pathfinding">
+            <sub-events>
+                <event-block sid="8510470808577519">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5401720714068265" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="3480675583398234" type="Array">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Chuveiro.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="2072927794313784" type="Array">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Chuveiro.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="3826153782885967" type="Array">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">PiaBanheiro.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="4531257956727553" type="Array">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">PiaBanheiro.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="846930184496932" type="Array">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Lavanderia.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="7792482011902808" type="Array">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Lavanderia.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="8385129732895421" type="Array">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">PiaCozinha.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="4552871405102808" type="Array">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">PiaCozinha.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="620017629490573" type="Array">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Carroprata.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="6915994993082838" type="Array">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Carroprata.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="4196153376492123" type="Array">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Carropreto.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="6187047821739818" type="Array">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Carropreto.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="4337264813464854" type="Array">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Carrovermelho.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="3370843649429536" type="Array">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Carrovermelho.Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="8880596158779451" type="Array">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">Sofa.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="2820452565756231" type="Array">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sofa.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8823551800090551">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7593010068298587" type="System">
+                            <param id="0" name="Interval (seconds)">5.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="1721750864688927" type="Pai">
+                            <param id="0" name="X">Array.At(random(7),0)</param>
+                            <param id="1" name="Y">Array.At(random(7),1)</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="9494716568465021" type="Mãe">
+                            <param id="0" name="X">Array.At(random(7),0)</param>
+                            <param id="1" name="Y">Array.At(random(7),1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7763413670189847">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="3628582689619464" type="Pai" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="8271772410101089" type="Pai" />
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="1722888267526454" type="Mãe" />
+                    </actions>
+                </event-block>
+                <event-block sid="8683972752302357">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="6327525323986905" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="1775884755233662" type="Pai" />
+                        <action id="-24" name="Move to top" sid="3892248276324023" type="Mãe" />
+                    </actions>
+                </event-block>
+                <event-block sid="8610662858197946">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="6803304701518506" type="Pai" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="9086670380069608" type="Pai">
+                            <param id="0" name="&apos;On&apos; time">10</param>
+                            <param id="1" name="&apos;Off&apos; time">15</param>
+                            <param id="2" name="Duration">5.0</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="1825064402815367" type="Mãe">
+                            <param id="0" name="&apos;On&apos; time">10</param>
+                            <param id="1" name="&apos;Off&apos; time">15</param>
+                            <param id="2" name="Duration">5.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6704400796034592" title="Chuveiro">
+            <sub-events>
+                <event-block sid="6026890595621293">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8187149496246148" type="Jogadr">
+                            <param id="0" name="Object">Chuveiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4474656440350856" type="Chuveiro">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1742058016817876" type="System">
+                            <param id="0" name="Variable">Variable1</param>
+                            <param id="1" name="Value">Variable1+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4379549949821319">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="697192883569111" type="Mãe">
+                            <param id="0" name="Object">Chuveiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5858355407798997" type="Chuveiro">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2344136313092663" type="System">
+                            <param id="0" name="Variable">Variable1</param>
+                            <param id="1" name="Value">Variable1-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1620067574434999">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5977222957712927" type="Pai">
+                            <param id="0" name="Object">Chuveiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="7848702935147675" type="Chuveiro">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3501623081888932" type="System">
+                            <param id="0" name="Variable">Variable1</param>
+                            <param id="1" name="Value">Variable1-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6790277905298023" title="pia">
+            <sub-events>
+                <event-block sid="707459953425565">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5587101305290052" type="Jogadr">
+                            <param id="0" name="Object">PiaBanheiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6915806187453217" type="PiaBanheiro">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7252865948697392" type="System">
+                            <param id="0" name="Variable">Variable1</param>
+                            <param id="1" name="Value">Variable1+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7874288818191731">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8950370354114439" type="Mãe">
+                            <param id="0" name="Object">PiaBanheiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5138663496686639" type="PiaBanheiro">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9812182999187765">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4006321466358865" type="Pai">
+                            <param id="0" name="Object">PiaBanheiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5254719014555528" type="PiaBanheiro">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="3350144954583863" title="Lavanderia">
+            <sub-events>
+                <event-block sid="3205884711886349">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4781324302252016" type="Jogadr">
+                            <param id="0" name="Object">Lavanderia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="9687032241729885" type="Lavanderia">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3489010864287686" type="System">
+                            <param id="0" name="Variable">ReservaAgua</param>
+                            <param id="1" name="Value">ReservaAgua</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5570841996967434">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5602149339018581" type="Mãe">
+                            <param id="0" name="Object">Lavanderia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3516028944705711" type="Lavanderia">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2013748776398252">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9759953831265948" type="Pai">
+                            <param id="0" name="Object">Lavanderia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4893418316327556" type="Lavanderia">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8552554665968498" title="cozinha" />
+        <event-block sid="1601204436560365">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="1336765571001226" type="System">
+                    <param id="0" name="First value">1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">Chuveiro.AnimationFrame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9962244120343119" type="System">
+                    <param id="0" name="Variable">Variable1</param>
+                    <param id="1" name="Value">Variable1+1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
